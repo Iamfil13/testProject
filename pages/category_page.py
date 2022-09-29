@@ -2,7 +2,7 @@ import time
 
 import allure
 from pages.base_page import BasePage
-from locators.pages_locators import CategoryPageLocators
+from locators.locators import CategoryPageLocators
 
 
 class CategoryPage(BasePage):
