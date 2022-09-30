@@ -35,7 +35,8 @@ class TestPages:
 
         with allure.step('Проверка текста в поле поиска, который должен совпадать с названием категории'):
             page = SelectedCategoryPage(driver, driver.current_url)
-            assert page.get_value() == result, "The text in the search field must match the name of the category"
+            assert page.get_selected_value() == result, \
+                "The text in the search field must match the name of the category"
 
 
 
