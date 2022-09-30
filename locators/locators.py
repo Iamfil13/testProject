@@ -9,4 +9,9 @@ class SearchPageLocators:
 
 
 class CategoryPageLocators:
+    SEARCH_FIELD_CATEGORY = (By.CSS_SELECTOR, '#uniq166444362610556877')
     CATEGORIES = (By.CSS_SELECTOR, f"div.PopularRequestList-Item_pos_{randint(1, 19)}")
+
+
+class SelectedCategoryLocators:
+    SEARCH_FIELD_SELECTED_CATEGORY = (By.CSS_SELECTOR, "input.input__control")
